@@ -15,17 +15,17 @@ Cabal-Version:       >= 1.10
 
 Library
   Default-Language:  Haskell2010
-  Build-Depends:     base >= 4.7 && < 5
+  Build-Depends:     base
                    , bytestring
                    , memory
-                   , transformers >= 0.4
+                   , transformers
                    , containers
                    , hourglass
-                   , pem >= 0.1
-                   , asn1-types >= 0.3.1 && < 0.4
-                   , asn1-encoding >= 0.9 && < 0.10
-                   , asn1-parse >= 0.9.3 && < 0.10
-                   , crypton >= 0.24
+                   , pem
+                   , asn1-types
+                   , asn1-encoding
+                   , asn1-parse
+                   , crypton
   Exposed-modules:   Data.X509
                      Data.X509.EC
   Other-modules:     Data.X509.Internal
@@ -47,7 +47,7 @@ Test-Suite test-x509
   type:              exitcode-stdio-1.0
   hs-source-dirs:    Tests
   Main-is:           Tests.hs
-  Build-Depends:     base >= 3 && < 5
+  Build-Depends:     base
                    , bytestring
                    , mtl
                    , tasty
